@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Bus Pass - ORIX EXPRESS</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Click2Pass</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#apply" class="active">Apply Pass</a></li>
+                <li><a href="#track">Track Pass</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="login-btn">Login</button>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Left Section - Form -->
+        <div class="form-section">
+            <div class="form-header">
+                <h1>Apply for Bus Pass</h1>
+                <p>Fill in the details below to get your monthly bus pass delivered to your doorstep</p>
+            </div>
+
+            <form class="bus-pass-form">
+                <!-- Personal Details Section -->
+                <div class="section">
+                    <h2>Personal Details</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" placeholder="your.email@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" placeholder="+91 98765 43210" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth <span class="required">*</span></label>
+                            <input type="date" id="dob" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="gender">Gender <span class="required">*</span></label>
+                            <select id="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Category <span class="required">*</span></label>
+                            <select id="category" required>
+                                <option value="">Select Category</option>
+                                <option value="student">Student</option>
+                                <option value="employee">Employee</option>
+                                <option value="senior">Senior Citizen</option>
+                                <option value="general">General</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Route Details Section -->
+                <div class="section">
+                    <h2>Route Details</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="from">From (Starting Point) <span class="required">*</span></label>
+                            <input type="text" id="from" placeholder="Enter starting location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="to">To (Destination) <span class="required">*</span></label>
+                            <input type="text" id="to" placeholder="Enter destination" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="passType">Pass Type <span class="required">*</span></label>
+                            <select id="passType" required>
+                                <option value="">Select Pass Type</option>
+                                <option value="daily">Daily Pass</option>
+                                <option value="weekly">Weekly Pass</option>
+                                <option value="monthly">Monthly Pass</option>
+                                <option value="quarterly">Quarterly Pass</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">Duration (Days) <span class="required">*</span></label>
+                            <input type="number" id="duration" placeholder="Enter number of days" min="1" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Upload Section -->
+                <div class="section">
+                    <h2>Document Upload</h2>
+                    
+                    <div class="form-group">
+                        <label for="idProof">ID Proof <span class="required">*</span></label>
+                        <div class="file-upload-wrapper">
+                            <input type="file" id="idProof" accept=".jpg,.jpeg,.png,.pdf" required>
+                            <label for="idProof" class="file-upload-label">
+                                <span class="upload-icon">📄</span>
+                                <span>Click to upload or drag and drop</span>
+                                <span class="upload-info">JPG, PNG or PDF (Max 5MB)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="photo">Passport Size Photo <span class="required">*</span></label>
+                        <div class="file-upload-wrapper">
+                            <input type="file" id="photo" accept=".jpg,.jpeg,.png" required>
+                            <label for="photo" class="file-upload-label">
+                                <span class="upload-icon">📷</span>
+                                <span>Click to upload or drag and drop</span>
+                                <span class="upload-info">JPG or PNG (Max 2MB)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="categoryProof">Category Proof (Student ID/Employee ID)</label>
+                        <div class="file-upload-wrapper">
+                            <input type="file" id="categoryProof" accept=".jpg,.jpeg,.png,.pdf">
+                            <label for="categoryProof" class="file-upload-label">
+                                <span class="upload-icon">🎫</span>
+                                <span>Click to upload or drag and drop</span>
+                                <span class="upload-info">Optional - For discounts</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Delivery Address Section -->
+                <div class="section">
+                    <h2>Delivery Address</h2>
+                    
+                    <div class="form-group">
+                        <label for="address">Full Address <span class="required">*</span></label>
+                        <textarea id="address" rows="3" placeholder="Enter your complete address" required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City <span class="required">*</span></label>
+                            <input type="text" id="city" placeholder="Enter city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State <span class="required">*</span></label>
+                            <input type="text" id="state" placeholder="Enter state" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pincode">Pincode <span class="required">*</span></label>
+                            <input type="text" id="pincode" placeholder="Enter pincode" pattern="[0-9]{6}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="landmark">Landmark</label>
+                            <input type="text" id="landmark" placeholder="Nearby landmark">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Auto Renewal Option -->
+                <div class="section">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="autoRenewal">
+                        <label for="autoRenewal">
+                            <strong>Enable Auto Renewal</strong>
+                            <span>Automatically renew your pass before expiry</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="section">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">
+                            I agree to the <a href="#terms">Terms & Conditions</a> and <a href="#privacy">Privacy Policy</a>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Proceed to Payment</button>
+            </form>
+        </div>
+
+        <!-- Right Section - Summary & Info -->
+        <div class="info-section">
+            <!-- Pass Summary Card -->
+            <div class="summary-card">
+                <h3>Pass Summary</h3>
+                <div class="summary-item">
+                    <span>Pass Type:</span>
+                    <strong>Monthly Pass</strong>
+                </div>
+                <div class="summary-item">
+                    <span>Category:</span>
+                    <strong>Student</strong>
+                </div>
+                <div class="summary-item">
+                    <span>Route:</span>
+                    <strong>Dhaka - Sylhet</strong>
+                </div>
+                <div class="summary-item">
+                    <span>Base Fare:</span>
+                    <strong>₹300</strong>
+                </div>
+                <div class="summary-item discount">
+                    <span>Student Discount (20%):</span>
+                    <strong>- ₹60</strong>
+                </div>
+                <div class="summary-item">
+                    <span>Processing Fee:</span>
+                    <strong>₹50</strong>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-total">
+                    <span>Total Amount:</span>
+                    <strong>₹290</strong>
+                </div>
+            </div>
+            <!-- Help Card -->
+            <div class="help-card">
+                <h3>Need Help?</h3>
+                <p>Our support team is here to assist you</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>1800-123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <span>support@orixexpress.com</span>
+                    </div>
+                </div>
+                <button class="chat-btn">💬 Live Chat</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 ORIX EXPRESS. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#refund">Refund Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
