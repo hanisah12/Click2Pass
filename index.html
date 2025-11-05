@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click2Pass – Instant Bus Passes & Tickets</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <nav class="top-navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Click<span>2Pass</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Passes</a></li>
+                <li><a href="#">Track Pass</a></li>
+                <li><a href="#">Commute</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-login">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-layout">
+
+        <!-- Sidebar (Optional) -->
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="user-info">
+                    <h3>Good Evening, <span>siddhi</span></h3>
+                    <p class="eco-badge"><i class="fas fa-leaf"></i> 10 g CO₂e saved</p>
+                </div>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-ticket-alt"></i> My Passes</a></li>
+                <li><a href="#"><i class="fas fa-history"></i> History</a></li>
+                <li><a href="#"><i class="fas fa-wallet"></i> Wallet</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <!-- Search Bar -->
+            <section class="search-bar">
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search route, stop, or pass ID..." />
+                    <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                </div>
+            </section>
+
+            <!-- Promo Banner -->
+            <section class="promo-banner">
+                <div class="promo-card">
+                    <div class="promo-icon"><i class="fas fa-leaf"></i></div>
+                    <div class="promo-text">
+                        <h3>CO₂e Savings</h3>
+                        <p>Save CO₂e & Get Featured on Leaderboard</p>
+                    </div>
+                    <button class="promo-cta">Check Now</button>
+                    <button class="promo-close"><i class="fas fa-times"></i></button>
+                </div>
+            </section>
+
+            <!-- Passes & Tickets -->
+            <section class="passes-section">
+                <h2 class="section-title">Passes & Tickets</h2>
+                <div class="passes-grid">
+                    <div class="pass-card">
+                        <div class="pass-icon"><i class="fas fa-id-card"></i></div>
+                        <h4>Daily Pass</h4>
+                        <p>Valid for 24 hours</p>
+                        <span class="price">₹49</span>
+                    </div>
+                    <div class="pass-card">
+                        <div class="pass-icon"><i class="fas fa-calendar-week"></i></div>
+                        <h4>Weekly Pass</h4>
+                        <p>7 days unlimited</p>
+                        <span class="price">₹299</span>
+                    </div>
+                    <div class="pass-card highlight">
+                        <div class="pass-icon"><i class="fas fa-ticket-alt"></i></div>
+                        <h4>Monthly Pass</h4>
+                        <p>Best value • 30 days</p>
+                        <span class="price">₹899</span>
+                        <span class="badge">Most Popular</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Commute Options -->
+            <section class="commute-section">
+                <h2 class="section-title">Commute Options Available</h2>
+                <div class="commute-grid">
+                    <div class="commute-card">
+                        <i class="fas fa-bus"></i>
+                        <p>City Bus</p>
+                    </div>
+                    <div class="commute-card">
+                        <i class="fas fa-bus-alt"></i>
+                        <p>AC Bus</p>
+                    </div>
+                    <div class="commute-card cash">
+                        <span class="cash-label">Cash</span>
+                        <i class="fas fa-taxi"></i>
+                        <p>Direct Ride</p>
+                    </div>
+                    <div class="commute-card">
+                        <i class="fas fa-train"></i>
+                        <p>Metro Link</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Travel Outstation -->
+            <section class="outstation-section">
+                <h2 class="section-title">Travel Outstation</h2>
+                <div class="outstation-placeholder">
+                    <p>Intercity bus booking coming soon...</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Click<span>2Pass</span></h3>
+                <p>Your trusted platform for instant bus passes and seamless commuting.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> support@click2pass.com</p>
+                <p><i class="fas fa-phone"></i> +91 1800-123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Click2Pass. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
