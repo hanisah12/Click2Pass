@@ -1,6 +1,4 @@
-/* ========================================
-   CSS Variables (Matching Theme)
-   ======================================== */
+
 :root {
     --primary: #4f46e5;
     --accent: #f43f5e;
@@ -16,9 +14,6 @@
     --font-base: 'Inter', sans-serif;
 }
 
-/* ========================================
-   Global Reset & Base
-   ======================================== */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -39,9 +34,6 @@ body {
     min-height: 100vh;
 }
 
-/* ========================================
-   Navigation Bar
-   ======================================== */
 .navbar {
     position: fixed;
     top: 0;
@@ -131,9 +123,6 @@ body {
     box-shadow: 0 8px 25px rgba(244, 63, 94, 0.4);
 }
 
-/* ========================================
-   Hero Section
-   ======================================== */
 .hero-section {
     margin-top: 70px;
     background: linear-gradient(135deg, #eef2ff 0%, #fdf2f8 100%);
@@ -160,9 +149,7 @@ body {
     margin: 0 auto;
 }
 
-/* ========================================
-   Main Container
-   ======================================== */
+
 .main-container {
     max-width: 1400px;
     margin: 4rem auto;
@@ -172,9 +159,6 @@ body {
     gap: 3rem;
 }
 
-/* ========================================
-   Contact Form Section
-   ======================================== */
 .form-card {
     background: var(--card-bg);
     border-radius: var(--radius);
@@ -275,9 +259,7 @@ body {
     box-shadow: 0 8px 30px rgba(79, 70, 229, 0.4);
 }
 
-/* ========================================
-   Contact Info Section
-   ======================================== */
+
 .contact-info-section {
     display: flex;
     flex-direction: column;
@@ -376,9 +358,7 @@ body {
     box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
 }
 
-/* ========================================
-   FAQ Section
-   ======================================== */
+
 .faq-section {
     background: var(--card-bg);
     padding: 5rem 2rem;
@@ -451,9 +431,6 @@ body {
     margin: 0;
 }
 
-/* ========================================
-   Map Section
-   ======================================== */
 .map-section {
     max-width: 1400px;
     margin: 4rem auto;
@@ -493,9 +470,6 @@ body {
     font-size: 0.95rem;
 }
 
-/* ========================================
-   Footer
-   ======================================== */
 .footer {
     background: #0f172a;
     color: #cbd5e1;
@@ -588,9 +562,7 @@ body {
     color: #64748b;
 }
 
-/* ========================================
-   Animations
-   ======================================== */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -611,9 +583,6 @@ body {
     }
 }
 
-/* ========================================
-   Responsive Design
-   ======================================== */
 @media (max-width: 1200px) {
     .main-container {
         gap: 2rem;

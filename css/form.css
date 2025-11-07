@@ -1,9 +1,7 @@
-/* ========================================
-   CSS Variables (from styles.css)
-   ======================================== */
+
 :root {
-    --primary: #4f46e5;      /* Deep Indigo */
-    --accent: #f43f5e;       /* Vibrant Coral */
+    --primary: #4f46e5;      
+    --accent: #f43f5e;       
     --bg: #f1f5f9;
     --card-bg: #ffffff;
     --text: #1e293b;
@@ -26,9 +24,6 @@
     --shadow-md: 0 8px 30px rgba(79, 70, 229, 0.4);
 }
 
-/* ========================================
-   Base & Re-usable Components
-   ======================================== */
 body {
     background: var(--bg);
     font-family: var(--font-base);
@@ -229,9 +224,6 @@ body {
     box-shadow: var(--shadow-md);
 }
 
-/* ========================================
-   Step 1: Pass Category
-   ======================================== */
 .pass-tabs {
     display: flex;
     gap: 1rem;
@@ -338,9 +330,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* ========================================
-   Step 3: Verification
-   ======================================== */
+
 .upload-box {
     border: 2px dashed var(--border);
     border-radius: var(--radius);
@@ -373,9 +363,6 @@ body {
     color: var(--text-light);
 }
 
-/* ========================================
-   Step 4: Preview
-   ======================================== */
 .preview-card {
     background: var(--card-bg);
     border-radius: var(--radius);
