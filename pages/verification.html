@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification - Click2Pass</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Click<span>2Pass</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="form.html" class="active">Apply Pass</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- <button class="login-btn">Login</button> -->
+        </div>
+    </nav>
+
+    <section class="form-hero">
+        <h1>Passenger Verification</h1>
+    </section>
+
+    <div class="form-container">
+        <div class="form-card">
+            <form action="preview.html" method="get">
+                <div class="form-group">
+                    <label>Upload Selfie</label>
+                    <div class="upload-box">
+                        <i class="fas fa-camera"></i>
+                        <p>Take a selfie</p>
+                        <span>Use your phone camera</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-type">ID Type</label>
+                    <select id="id-type" required>
+                        <option value="">Select ID Type</option>
+                        <option value="Aadhar Card" selected>Aadhar Card</option>
+                        <option value="Voter ID">Voter ID</option>
+                        <option value="Driving License">Driving License</option>
+                        <option value="Passport">Passport</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-number">Identification Number (Last 4 digits)</label>
+                    <input type="text" id="id-number" value="7416" required>
+                </div>
+                
+                <a href="preview.html" class="btn-full" style="margin-top: 1rem;">Confirm</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
