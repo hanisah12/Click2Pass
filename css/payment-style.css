@@ -1,111 +1,110 @@
-
 .ticket-card {
-    display: flex;
-    background: var(--card-bg);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--border);
-    margin-bottom: 2rem;
-    overflow: hidden;
-    transition: var(--transition);
+  display: flex;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: var(--transition);
 }
 .ticket-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
 }
 .ticket-main {
-    padding: 2rem;
-    flex-grow: 1;
-    border-right: 2px dashed var(--border);
+  padding: 2rem;
+  flex-grow: 1;
+  border-right: 2px dashed var(--border);
 }
 .ticket-main h3 {
-    font-size: 1.4rem;
-    color: var(--primary);
-    margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
 }
 .ticket-main .route {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text);
-    margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1rem;
 }
 .ticket-main .details {
-    display: flex;
-    gap: 2.5rem;
-    color: var(--text-light);
+  display: flex;
+  gap: 2.5rem;
+  color: var(--text-light);
 }
 .ticket-main .details p {
-    margin-bottom: 0.25rem;
-    font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
 }
 .ticket-main .details strong {
-    color: var(--text);
-    font-weight: 600;
+  color: var(--text);
+  font-weight: 600;
 }
 
 .ticket-qr {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 220px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
 }
 .ticket-qr .qr-code {
-    font-size: 7rem; 
-    color: var(--text);
-    line-height: 1;
+  font-size: 7rem;
+  color: var(--text);
+  line-height: 1;
 }
 .ticket-qr .pass-id {
-    font-size: 0.85rem;
-    color: var(--text-light);
-    font-weight: 600;
-    margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-top: 0.5rem;
 }
 
 .ticket-actions {
-    margin-top: 1.5rem;
-    border-top: 1px solid var(--border);
-    padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
 }
 .btn-renew {
-    background: var(--accent);
-    color: white;
-    padding: 0.5rem 1.2rem;
-    border-radius: 2rem;
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-decoration: none;
-    transition: var(--transition);
+  background: var(--accent);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: var(--transition);
 }
 .btn-renew:hover {
-    background: #e11d48;
-    transform: scale(1.05);
+  background: #e11d48;
+  transform: scale(1.05);
 }
 
 /* Expired State */
 .ticket-card.expired {
-    opacity: 0.65;
-    background: var(--bg);
+  opacity: 0.65;
+  background: var(--bg);
 }
 .ticket-card.expired:hover {
-    opacity: 0.8;
-    transform: translateY(0);
+  opacity: 0.8;
+  transform: translateY(0);
 }
 .ticket-card.expired .ticket-main h3 {
-    color: var(--text-light);
+  color: var(--text-light);
 }
 
 @media (max-width: 768px) {
-    .ticket-card {
-        flex-direction: column;
-    }
-    .ticket-main {
-        border-right: none;
-        border-bottom: 2px dashed var(--border);
-    }
-    .ticket-qr {
-        width: 100%;
-        padding: 1.5rem;
-    }
+  .ticket-card {
+    flex-direction: column;
+  }
+  .ticket-main {
+    border-right: none;
+    border-bottom: 2px dashed var(--border);
+  }
+  .ticket-qr {
+    width: 100%;
+    padding: 1.5rem;
+  }
 }
