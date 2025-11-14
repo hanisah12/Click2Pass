@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us – Click2Pass</title>
+    <title>Renew Your Pass – Click2Pass</title>
     <link rel="stylesheet" href="../css/style1.css" />
-    <link rel="stylesheet" href="../css/contact-style.css" />
+    <link rel="stylesheet" href="../css/renew-pass-style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -19,9 +19,9 @@
             <ul class="nav-menu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="form.html">Apply Pass</a></li>
-                <li><a href="renew-pass.html">Renew Pass</a></li>
+                <li><a href="renew-pass.html" class="active">Renew Pass</a></li>
                 <li><a href="my-passes.html">My Passes</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-actions">
                 <a href="login.html" class="btn-login">Login</a>
@@ -31,32 +31,32 @@
 
     <div class="form-container">
         <div class="form-card">
-            <h2 class="form-title">Get in Touch</h2>
-            <p class="form-subtitle">Have a question or feedback? Let us know!</p>
+            <h2 class="form-title">Renew Your Pass</h2>
+            <p class="form-subtitle">Extend your pass duration quickly.</p>
 
-            <form action="#">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" placeholder="Enter your name" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" placeholder="Enter your email" required />
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" placeholder="What is this regarding?" required />
-                </div>
+            <form action="payment.html"> 
                 
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" placeholder="Write your message here..." required></textarea>
+                    <label for="pass-id">Pass ID</label>
+                    <input type="text" id="pass-id" placeholder="Enter your Pass ID (e.g., P-1234567)" required />
                 </div>
 
-                <button type="submit" class="btn-primary">Send Message</button>
+                <div class="form-group">
+                    <label>Select Renewal Duration</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="pass-type" value="daily"> Daily (₹49)</label>
+                        <label><input type="radio" name="pass-type" value="weekly"> Weekly (₹299)</label>
+                        <label><input type="radio" name="pass-type" value="monthly" checked> Monthly (₹899)</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="auto-renew"> Enable Auto-Renew for next time</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">Proceed to Payment</button>
             </form>
         </div>
     </div>
