@@ -1,103 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login – Click2Pass</title>
     <link rel="stylesheet" href="../css/style1.css" />
     <link rel="stylesheet" href="../css/login-style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
     <nav class="top-navbar">
-      <div class="nav-container">
-        <div class="logo">
-          <h2>Click<span>2Pass</span></h2>
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Click<span>2Pass</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="signup.html" class="btn-login">Sign-Up</a>
+                <a href="login.html" class="btn-login active">Login</a>
+            </div>
         </div>
-        <ul class="nav-menu">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="form.html">Apply Pass</a></li>
-          <li><a href="renew-pass.html">Renew Pass</a></li>
-          <li><a href="my-passes.html">My Passes</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-          <a href="login.html" class="btn-login active">Login</a>
-        </div>
-      </div>
     </nav>
 
     <div class="form-container">
-      <div class="login-card">
-        <h2 class="form-title">Login or Sign Up</h2>
-        <p class="form-subtitle">Enter your details to get started.</p>
+        <div class="login-card">
+            <h2 class="form-title">Login or Sign Up</h2>
+            <p class="form-subtitle">Enter your details to get started.</p>
 
-        <form action="../index.html">
-          <div class="form-group">
-            <label for="email-phone">Email / Phone Number</label>
-            <input
-              type="text"
-              id="email-phone"
-              placeholder="e.g., name@example.com or 9876543210"
-              required
-            />
-          </div>
+            <form action="../pages/form.html"> <div class="form-group">
+                    <label for="email-phone">Email / Phone Number</label>
+                    <input type="text" id="email-phone" placeholder="e.g., name@example.com or 9876543210" required />
+                </div>
+                
+                <div class="form-group">
+                    <label for="otp">Enter OTP</label>
+                    <input type="text" id="otp" placeholder="Enter 6-digit OTP" required />
+                </div>
 
-          <div class="form-group">
-            <label for="otp">Enter OTP</label>
-            <input
-              type="text"
-              id="otp"
-              placeholder="Enter 6-digit OTP"
-              required
-            />
-          </div>
-
-          <button type="submit" class="btn-primary">Verify & Login</button>
-        </form>
-      </div>
+                <button type="submit" class="btn-primary">Verify & Login</button>
+            </form>
+        </div>
     </div>
 
     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-col">
-          <h3>Click<span>2Pass</span></h3>
-          <p>
-            Your trusted platform for instant bus passes and seamless commuting.
-          </p>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Click<span>2Pass</span></h3>
+                <p>Your trusted platform for instant bus passes and seamless commuting.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> support@click2pass.com</p>
+                <p><i class="fas fa-phone"></i> +91 1800-123-4567</p>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-          </ul>
+        <div class="footer-bottom">
+            <p>© 2025 Click2Pass. All rights reserved.</p>
         </div>
-        <div class="footer-col">
-          <h4>Support</h4>
-          <ul>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">FAQs</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <p><i class="fas fa-envelope"></i> support@click2pass.com</p>
-          <p><i class="fas fa-phone"></i> +91 1800-123-4567</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2025 Click2Pass. All rights reserved.</p>
-      </div>
     </footer>
-  </body>
+
+</body>
 </html>

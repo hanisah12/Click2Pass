@@ -26,122 +26,66 @@
           <li><a href="form.html" class="active">Apply Pass</a></li>
           <li><a href="renew-pass.html">Renew Pass</a></li>
           <li><a href="my-passes.html">My Passes</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="nav-actions">
-          <a href="login.html" class="btn-login">Login</a>
-        </div>
+      
       </div>
     </nav>
 
     <div class="form-container">
       <div class="form-card">
-        <h2 class="form-title">Apply for a New Pass</h2>
+        <h2 class="form-title">Apply for Bus Pass</h2>
         <p class="form-subtitle">
-          Fill in the details below to generate your pass.
+          Fill the details below to apply for your pass
         </p>
 
-        <form action="payment.html">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="from-station">From Station</label>
-              <input
-                type="text"
-                id="from-station"
-                placeholder="Enter starting stop"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="to-station">To Station</label>
-              <input
-                type="text"
-                id="to-station"
-                placeholder="Enter destination stop"
-                required
-              />
-            </div>
+        <form action="payment.html" method="post">
+  
+          <div class="form-group">
+            <label for="id-proof">Aadhaar Number</label>
+            <input
+              type="text"
+              id="id-proof"
+              name="id_proof"
+              placeholder="Enter 12-digit Aadhaar number"
+              maxlength="12"
+              pattern="[0-9]{12}"
+              required
+            />
           </div>
 
+          
           <div class="form-group">
             <label>Select Pass Type</label>
-            <div class="radio-group">
-              <label
-                ><input type="radio" name="pass-type" value="daily" checked />
-                Daily</label
-              >
-              <label
-                ><input type="radio" name="pass-type" value="weekly" />
-                Weekly</label
-              >
-              <label
-                ><input type="radio" name="pass-type" value="monthly" />
-                Monthly</label
-              >
+            <div class="checkbox-group pass-type-group">
+              <label>
+                <input type="checkbox" name="pass_type" value="1000" required />
+                Monthly Pass – ₹1000
+              </label>
+
+              <label>
+                <input type="checkbox" name="pass_type" value="2000" />
+                Premium Pass – ₹2000
+              </label>
             </div>
+            <small class="hint-text">Select only one pass type</small>
           </div>
 
+        
           <div class="form-group">
-            <label for="category">Select Category</label>
-            <select id="category" required>
-              <option value="general">General</option>
-              <option value="student">Student</option>
-              <option value="senior">Senior Citizen</option>
-              <option value="family">Family</option>
-              <option value="corporate">Corporate</option>
-            </select>
+            <label for="valid-from">Valid From</label>
+            <input type="date" id="valid-from" name="valid_from" required />
           </div>
 
+          
           <div class="form-group">
-            <label for="id-proof">Upload ID Proof (for Student/Senior)</label>
-            <input type="file" id="id-proof" accept="image/*,.pdf" />
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="start-date">Start Date</label>
-              <input type="date" id="start-date" required />
-            </div>
-            <div class="form-group">
-              <label for="end-date">End Date</label>
-              <input type="date" id="end-date" required />
-            </div>
+            <label for="valid-till">Valid Till</label>
+            <input type="date" id="valid-till" name="valid_till" required />
           </div>
 
-          <div class="form-group">
-            <label for="address">Delivery Address (for physical pass)</label>
-            <textarea
-              id="address"
-              placeholder="Enter your full mailing address"
-            ></textarea>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="city">City</label>
-              <input type="text" id="city" placeholder="Enter your city" />
-            </div>
-            <div class="form-group">
-              <label for="pincode">Pincode</label>
-              <input
-                type="text"
-                id="pincode"
-                placeholder="Enter 6-digit pincode"
-                maxlength="6"
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="checkbox-group">
-              <label
-                ><input type="checkbox" name="auto-renew" /> Enable
-                Auto-Renew</label
-              >
-            </div>
-          </div>
-
-          <button type="submit" class="btn-primary">
-            Proceed to Pay & Apply
-          </button>
+          <button type="submit" class="btn-primary">Proceed to Payment</button>
         </form>
       </div>
     </div>

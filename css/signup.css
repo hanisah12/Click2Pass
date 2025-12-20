@@ -1,26 +1,27 @@
 
-
 .form-container {
     max-width: 800px;
     margin: 90px auto 0; 
     padding: 2rem;
-    min-height: calc(100vh - 250px); 
+    min-height: calc(100vh - 250px);
 }
 
-.form-card {
+.login-card {
     background: var(--card-bg);
     border-radius: var(--radius);
     padding: 2.5rem;
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border);
-    margin-top: 2rem;
+    max-width: 500px;
+    margin: 2rem auto 0;
 }
+
 
 .form-title {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--text);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     text-align: center;
 }
 
@@ -45,10 +46,9 @@
 }
 
 .form-group input[type="text"],
-.form-group input[type="date"],
-.form-group input[type="file"],
-.form-group select,
-.form-group textarea {
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"] {
     width: 100%;
     padding: 0.8rem 1.1rem;
     border: 1px solid var(--border);
@@ -59,78 +59,31 @@
     transition: var(--transition);
 }
 
-
-.form-group input[type="file"] {
-    padding: 0.5rem;
-}
-
-.form-group input[type="file"]::file-selector-button {
-    font-family: var(--font-base);
-    background: var(--primary);
-    color: white;
-    border: none;
-    padding: 0.7rem 1rem;
-    border-radius: 0.6rem;
-    cursor: pointer;
-    transition: var(--transition);
-    margin-right: 1rem;
-    font-weight: 500;
-}
-
-.form-group input[type="file"]::file-selector-button:hover {
-    background: #4338ca; 
+.form-group input::placeholder {
+    color: var(--text-light);
 }
 
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.form-group input:focus {
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
     background: var(--card-bg);
     outline: none;
 }
 
-textarea {
-    min-height: 120px;
-    resize: vertical;
+
+.form-group input:disabled {
+    background: #e5e7eb;
+    color: #64748b;
+    cursor: not-allowed;
 }
 
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-}
-
-.radio-group,
-.checkbox-group {
-    padding-top: 0.5rem;
-}
-
-.radio-group label,
-.checkbox-group label {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    margin-right: 1.5rem;
-    color: var(--text);
-    cursor: pointer;
-}
-
-.checkbox-group input {
-    width: 1.2em;
-    height: 1.2em;
-    accent-color: var(--primary);
-}
-
-.radio-group input {
-    accent-color: var(--primary);
-}
 
 .btn-primary {
     display: inline-block;
+    width: 100%;
     background: var(--primary);
-    color: white;
+    color: #fff;
     border: none;
     padding: 0.8rem 1.8rem;
     border-radius: 2rem;
@@ -140,7 +93,6 @@ textarea {
     box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
     font-size: 1rem;
     text-align: center;
-    width: 100%;
     margin-top: 1rem;
 }
 
@@ -150,20 +102,27 @@ textarea {
     box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4);
 }
 
+
+.form-container a {
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+
 @media (max-width: 768px) {
-    .form-row {
-        grid-template-columns: 1fr;
-    }
     .form-container {
         padding: 1rem;
         margin-top: 80px;
     }
-    .form-card {
+
+    .login-card {
         padding: 1.5rem;
     }
-    .radio-group label {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 0.8rem;
+
+    .form-title {
+        font-size: 1.5rem;
     }
 }

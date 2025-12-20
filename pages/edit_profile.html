@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile – Click2Pass</title>
+
+    <link rel="stylesheet" href="../css/style1.css" />
+    <link rel="stylesheet" href="../css/edit-profile.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+ 
+    <nav class="top-navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <h2>Click<span>2Pass</span></h2>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="my-passes.html">My Passes</a></li>
+          <li><a href="profile.html" class="active">Profile</a></li>
+        </ul>
+      </div>
+    </nav>
+
+   
+    <div class="main-layout">
+     
+      <aside class="sidebar">
+        <div class="user-profile">
+          <div class="avatar">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="user-info">
+            <h3>Welcome,</h3>
+            <span>Hanisah</span>
+          </div>
+        </div>
+
+        <ul class="sidebar-menu">
+          <li>
+            <a href="profile.html" class="active">
+              <i class="fas fa-user"></i>
+              Profile
+            </a>
+          </li>
+          <li>
+            <a href="my-passes.html">
+              <i class="fas fa-ticket-alt"></i>
+              My Passes
+            </a>
+          </li>
+          <li>
+            <a href="renew-pass.html">
+              <i class="fas fa-sync-alt"></i>
+              Renew Pass
+            </a>
+          </li>
+          <li>
+            <a href="edit_profile.html">
+              <i class="fas fa-lock"></i>
+              Edit Profile
+            </a>
+          </li>
+          <li>
+            <a href="login.html">
+              <i class="fas fa-sign-out-alt"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+     
+      <main class="content">
+        <div class="edit-profile-wrapper">
+          <h2 class="section-title">Edit Profile</h2>
+
+          <form class="edit-profile-form">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" />
+            </div>
+
+            <div class="form-group">
+              <label>Mobile Number</label>
+              <input type="tel" />
+            </div>
+
+            <hr class="edit-divider" />
+
+            <div class="form-group">
+              <label>Current Password</label>
+              <input type="password" />
+            </div>
+
+            <div class="form-group">
+              <label>New Password</label>
+              <input type="password" />
+            </div>
+
+            <div class="form-group">
+              <label>Confirm Password</label>
+              <input type="password" />
+            </div>
+
+            <button class="btn-primary">Save Changes</button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>© 2025 Click2Pass. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
