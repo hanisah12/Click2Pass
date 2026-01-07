@@ -35,7 +35,8 @@
         <h2 class="form-title">Renew Your Pass</h2>
         <p class="form-subtitle">Extend your pass validity in just one step.</p>
 
-        <form action="payment.html">
+       
+          <form>
 
             <div class="form-group">
                 <label for="pass-id">Pass ID</label>
@@ -47,31 +48,26 @@
                 />
             </div>
 
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Current Valid From</label>
-                    <input type="text" value="01 Nov 2025" readonly />
-                </div>
-                <div class="form-group">
-                    <label>Current Valid Till</label>
-                    <input type="text" value="30 Nov 2025" readonly />
-                </div>
-            </div>
+                
+            <label class="main-label">Select Pass Type</label>
+          <div class="pass-container">
+            <div class="pass-type-group">
+              <label class="pass-option">
+                <input type="radio" name="pass_type" value="1000" required />
+                <span>1000 Pass <small>[valid in Non-AC buses]</small></span>
+              </label>
 
-            <div class="form-group">
-                <label>Select Pass Amount</label>
-                <div class="radio-group">
-                    <label>
-                        <input type="radio" name="pass_type" value="1000" checked>
-                        Monthly Pass – ₹1000
-                    </label>
-                    <label>
-                        <input type="radio" name="pass_type" value="2000">
-                        Premium Pass – ₹2000
-                    </label>
-                </div>
+              <label class="pass-option">
+                <input type="radio" name="pass_type" value="2000" />
+                <span>
+                  ₹2000 Pass
+                  <small>[valid in AC and Non-AC buses]</small>
+                </span>
+              </label>
             </div>
+          </div>
 
+          <br/>
             <div class="form-row">
                 <div class="form-group">
                     <label for="new-from">New Valid From</label>
@@ -83,20 +79,10 @@
                 </div>
             </div>
 
-            <div class="form-group">
-                <div class="checkbox-group">
-                    <label>
-                        <input type="checkbox" name="auto_renew">
-                        Enable auto-renew for future
-                    </label>
-                </div>
-            </div>
-
-            <button type="submit" class="btn-primary">
-                Proceed to Payment
-            </button>
-
+            <a href="../pages/success.html" class="btn-primary">
+                Proceed to Continue</a>
         </form>
+        <!-- </form> -->
     </div>
 </div>
 

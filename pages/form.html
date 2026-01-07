@@ -30,7 +30,6 @@
           <li></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      
       </div>
     </nav>
 
@@ -42,7 +41,6 @@
         </p>
 
         <form action="payment.html" method="post">
-  
           <div class="form-group">
             <label for="id-proof">Aadhaar Number</label>
             <input
@@ -55,37 +53,39 @@
               required
             />
           </div>
-
           
-          <div class="form-group">
-            <label>Select Pass Type</label>
-            <div class="checkbox-group pass-type-group">
-              <label>
-                <input type="checkbox" name="pass_type" value="1000" required />
-                Monthly Pass – ₹1000
+            <label class="main-label">Select Pass Type</label>
+          <div class="pass-container">
+            <div class="pass-type-group">
+              <label class="pass-option">
+                <input type="radio" name="pass_type" value="1000" required />
+                <span>1000 Pass <small>[valid in Non-AC buses]</small></span>
               </label>
 
-              <label>
-                <input type="checkbox" name="pass_type" value="2000" />
-                Premium Pass – ₹2000
+              <label class="pass-option">
+                <input type="radio" name="pass_type" value="2000" />
+                <span>
+                  ₹2000 Pass
+                  <small>[valid in AC and Non-AC buses]</small>
+                </span>
               </label>
             </div>
-            <small class="hint-text">Select only one pass type</small>
           </div>
 
-        
           <div class="form-group">
             <label for="valid-from">Valid From</label>
             <input type="date" id="valid-from" name="valid_from" required />
           </div>
 
-          
           <div class="form-group">
             <label for="valid-till">Valid Till</label>
             <input type="date" id="valid-till" name="valid_till" required />
           </div>
 
-          <button type="submit" class="btn-primary">Proceed to Payment</button>
+          <!-- <button type="submit" class="btn-primary">Proceed to Payment</button> -->
+          <a href="../pages/success.html" class="btn-primary"
+            >Proceed to Continue</a
+          >
         </form>
       </div>
     </div>
