@@ -40,53 +40,48 @@
           Fill the details below to apply for your pass
         </p>
 
-        <form action="payment.html" method="post">
-          <div class="form-group">
-            <label for="id-proof">Aadhaar Number</label>
-            <input
-              type="text"
-              id="id-proof"
-              name="id_proof"
-              placeholder="Enter 12-digit Aadhaar number"
-              maxlength="12"
-              pattern="[0-9]{12}"
-              required
-            />
-          </div>
-          
-            <label class="main-label">Select Pass Type</label>
-          <div class="pass-container">
-            <div class="pass-type-group">
-              <label class="pass-option">
-                <input type="radio" name="pass_type" value="1000" required />
-                <span>1000 Pass <small>[valid in Non-AC buses]</small></span>
-              </label>
+        <form id="apply-pass-form" action="payment.html" method="post">
+  <div class="form-group">
+    <label for="id-proof">Aadhaar Number</label>
+    <input
+      type="text"
+      id="id-proof"
+      name="id_proof"
+      placeholder="Enter 12-digit Aadhaar number"
+      maxlength="12"
+      pattern="[0-9]{12}"
+      required
+    />
+  </div>
 
-              <label class="pass-option">
-                <input type="radio" name="pass_type" value="2000" />
-                <span>
-                  ₹2000 Pass
-                  <small>[valid in AC and Non-AC buses]</small>
-                </span>
-              </label>
-            </div>
-          </div>
+  <label class="main-label">Select Pass Type</label>
+  <div class="pass-container">
+    <div class="pass-type-group">
+      <label class="pass-option">
+        <input type="radio" name="pass_type" value="1000" required />
+        <span>1000 Pass <small>[valid in Non-AC buses]</small></span>
+      </label>
 
-          <div class="form-group">
-            <label for="valid-from">Valid From</label>
-            <input type="date" id="valid-from" name="valid_from" required />
-          </div>
+      <label class="pass-option">
+        <input type="radio" name="pass_type" value="2000" />
+        <span>₹2000 Pass <small>[valid in AC and Non-AC buses]</small></span>
+      </label>
+    </div>
+  </div>
 
-          <div class="form-group">
-            <label for="valid-till">Valid Till</label>
-            <input type="date" id="valid-till" name="valid_till" required />
-          </div>
+  <div class="form-group">
+    <label for="valid-from">Valid From</label>
+    <input type="date" id="valid-from" name="valid_from" required />
+  </div>
 
-          <!-- <button type="submit" class="btn-primary">Proceed to Payment</button> -->
-          <a href="../pages/success.html" class="btn-primary"
-            >Proceed to Continue</a
-          >
-        </form>
+  <div class="form-group">
+    <label for="valid-till">Valid Till</label>
+    <input type="date" id="valid-till" name="valid_till" required />
+  </div>
+
+  <button type="submit" class="btn-primary">Proceed to Continue</button>
+</form>
+
       </div>
     </div>
 
@@ -124,5 +119,8 @@
         <p>© 2025 Click2Pass. All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="../js/form.js"></script>
+
   </body>
 </html>
